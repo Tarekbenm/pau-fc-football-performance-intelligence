@@ -1,0 +1,83 @@
+
+version: 2
+
+models:
+  - name: fct_match_performance
+    description: "Performance du Pau FC par match, avec résultats et statistiques de tirs."
+
+    columns:
+      - name: season
+        data_tests:
+          - not_null
+
+      - name: matchweek
+        data_tests:
+          - not_null
+
+      - name: shots_for
+        data_tests:
+          - not_null
+
+      - name: shots_against
+        data_tests:
+          - not_null
+
+      - name: shots_on_target_for
+        data_tests:
+          - not_null
+
+      - name: shots_on_target_against
+        data_tests:
+          - not_null
+
+      - name: gk_shots_faced
+        data_tests:
+          - not_null
+
+      - name: gk_goals_conceded
+        data_tests:
+          - not_null
+
+      - name: gk_saves
+        data_tests:
+          - not_null
+
+      - name: opponent_gk_shots_faced
+        data_tests:
+          - not_null
+
+      - name: opponent_gk_saves
+        data_tests:
+          - not_null
+
+      - name: crosses_for
+        data_tests:
+          - not_null
+
+      - name: crosses_against
+        data_tests:
+          - not_null
+
+      - name: interceptions_for
+        data_tests:
+          - not_null
+
+      - name: interceptions_against
+        data_tests:
+          - not_null
+
+      - name: tackles_won_for
+        data_tests:
+          - not_null
+
+      - name: tackles_won_against
+        data_tests:
+          - not_null
+
+      - name: fouls_committed_for
+        data_tests:
+          - not_null
+
+      - name: fouls_committed_against
+        data_tests:
+          - not_null

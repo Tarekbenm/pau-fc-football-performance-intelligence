@@ -1,0 +1,33 @@
+
+version: 2
+
+models:
+  - name: fct_player_performance
+    description: "Statistiques des joueurs du Pau FC, une ligne par joueur et par saison."
+
+    columns:
+      - name: season
+        data_tests:
+          - not_null
+
+      - name: player_id
+        data_tests:
+          - not_null
+
+      - name: player_name
+        data_tests:
+          - not_null
+
+      - name: matches_played
+        data_tests:
+          - not_null
+
+      - name: minutes_played
+        data_tests:
+          - not_null
+
+      - name: has_significant_playtime
+        data_tests:
+          - not_null
+
+    

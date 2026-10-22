@@ -1,0 +1,26 @@
+SELECT
+    season,
+    player_id,
+    player_name,
+    nationality,
+    position,
+    age,
+    matches_played,
+    starts,
+    minutes_played,
+    nineties,
+    goals,
+    assists,
+    goal_contributions,
+    non_penalty_goals,
+    penalty_goals,
+    penalty_attempts,
+    yellow_cards,
+    red_cards,
+    goals_per90,
+    assists_per90,
+    goal_contributions_per90,
+    non_penalty_goals_per90,
+    non_penalty_contributions_per90
+
+FROM {{ source('pau_fc', 'players') }}

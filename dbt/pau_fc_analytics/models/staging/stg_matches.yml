@@ -1,0 +1,39 @@
+
+version: 2
+
+models:
+  - name: stg_matches
+    description: "Matchs de Ligue 2 du Pau FC depuis 2023-2024"
+
+    columns:
+      - name: season
+        data_tests:
+          - not_null
+
+      - name: matchweek
+        data_tests:
+          - not_null
+
+      - name: match_date
+        data_tests:
+          - not_null
+
+      - name: result
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['W', 'D', 'L']
+
+      - name: venue
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['Home', 'Away']
+
+      - name: points
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: [0, 1, 3]

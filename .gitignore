@@ -1,0 +1,41 @@
+﻿# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Environment variables and credentials
+.env
+.env.*
+!.env.example
+profiles.yml
+!.github/**/profiles.yml
+*.pem
+*.key
+
+# dbt generated files
+**/target/
+**/dbt_packages/
+**/logs/
+**/partial_parse.msgpack
+
+# Local files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+structure_projet.txt
+
+# Local database files
+*.sqlite
+*.sqlite3
+*.db
+
+# Power BI temporary files
+*.pbit.lock
+
+# Source and processed datasets - redistribution rights pending
+data/raw/
+data/processed/

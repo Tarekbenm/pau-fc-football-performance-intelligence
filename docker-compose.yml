@@ -1,0 +1,22 @@
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: pau_fc_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: pau_fc
+      POSTGRES_PASSWORD: pau_fc_dev
+      POSTGRES_DB: pau_fc
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U pau_fc -d pau_fc"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  postgres_data:

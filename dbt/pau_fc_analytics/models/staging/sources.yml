@@ -1,0 +1,17 @@
+
+version: 2
+
+sources:
+  - name: pau_fc
+    schema: public
+    tables:
+      - name: matches
+        description: "Matchs du Pau FC nettoyés avec Python"
+      - name: shooting
+        description: "Statistiques de tirs du Pau FC et de ses adversaires"
+      - name: goalkeeping
+        description: "Statistiques des gardiens"
+      - name: divers
+        description: "Statistiques diverses du Pau FC et de ses adversaires"
+      - name: players
+        description: "Statistiques individuelles des joueurs du Pau FC par saison"
