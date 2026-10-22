@@ -1,0 +1,12 @@
+﻿pau_fc_analytics:
+  target: ci
+  outputs:
+    ci:
+      type: postgres
+      host: localhost
+      port: 5432
+      user: ci_user
+      password: ci_placeholder
+      dbname: pau_fc_ci
+      schema: analytics
+      threads: 2

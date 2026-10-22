@@ -39,3 +39,6 @@ structure_projet.txt
 # Source and processed datasets - redistribution rights pending
 data/raw/
 data/processed/
+
+# Allow the GitHub Actions dbt profile
+!.github/dbt/profiles.yml
